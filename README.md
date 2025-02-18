@@ -2,7 +2,7 @@
 This project is a simple shell implementation inspired by bash. It was developed as part of the 42 School curriculum, and the goal is to recreate a basic shell with both mandatory and bonus features, supporting a range of built-in functions, shell operations, and complex shell structures.
 
 # Authors
-Tran Hieu Trung (https://github.com/your-github)
+Tran Hieu Trung (https://github.com/tranhieutrung)<br>
 Kha Tieu (https://github.com/tdkha)
 
 # Description
@@ -39,10 +39,12 @@ The Minishell project implements a minimalistic shell that executes commands fro
 Linux OS (Ubuntu preferred)
 
 # Usage
-git clone https://github.com/your-username/minishell.git
+```bash
+git clone https://github.com/tranhieutrung/minishell.git
 cd minishell
 make
 ./minishell
+```
 
 To exit the shell, type exit.
 
