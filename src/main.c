@@ -6,7 +6,7 @@
 /*   By: hitran <hitran@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 15:53:50 by ktieu             #+#    #+#             */
-/*   Updated: 2024/12/19 11:16:19 by hitran           ###   ########.fr       */
+/*   Updated: 2025/03/03 10:39:11 by hitran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,10 +81,15 @@ int	main(int ac, char **av, char **envp)
 
 	if (ac != 1)
 	{
-		ft_putendl_fd("Error: invalid number of arguments!\n", 2);
+		ft_putendl_fd("Error: invalid number of arguments!", 2);
 		exit (EXIT_FAILURE);
 	}
 	(void)av;
+	if (!envp || !*envp)
+	{
+		ft_putendl_fd("Error: environment pointer is NULL or empty!", 2);
+		exit (EXIT_FAILURE);
+	}
 	shell_init(&shell, envp);
 	minishell(&shell);
 	shell_cleanup(&shell);
